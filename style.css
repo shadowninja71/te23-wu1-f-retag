@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
     font-size: 1.2rem;
+    color: orange;
 }
 
 .site-head {
@@ -11,9 +12,9 @@ body {
     font-size: 1.4rem;
     text-transform: uppercase;
     font-weight: 500;
-    color: #fff;
+    color: orange;
     background-color: #333;
-    border-bottom: 4px solid red;
+    border-bottom: 4px solid green;
     padding-inline: 2rem;
 }
 
@@ -47,7 +48,7 @@ img { max-width: 100%;}
 .hero-content {
     display: grid;
     place-items: center;
-    color: #fff;
+    color: white;
 }
 
 .hero-content h1 { 
@@ -106,7 +107,7 @@ img { max-width: 100%;}
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid orange;
     border-radius: 25px;
     max-width: 18rem;
     display: flex;
@@ -124,3 +125,34 @@ img { max-width: 100%;}
 .card-content{
     padding: 1rem;
 }
+.region {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+.color-list {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  list-style: none;
+  
+  li {
+    aspect-ratio: 1;
+    width: 10rem;
+    display: grid;
+    place-items:center;
+    border: 1px solid var(--color-dark);
+  }
+}
+.Light {
+    background-color: var(--color-primary);
+  }
+.Dark{
+    background-color: #333;
+}
+.Secondary{
+    background-color: red;
+}
+.light-primary {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+  }
